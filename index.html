@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas Moderna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Minhas Tarefas</h1>
+            <button class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        
+        <div class="input-area">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Adicione uma nova tarefa..."
+                autocomplete="off"
+            >
+            <button id="addBtn" class="pulse">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+
+        <ul id="taskList">
+            <div class="empty-state">
+                <i class="fas fa-clipboard-list"></i>
+                <h3>Lista vazia</h3>
+                <p>Adicione tarefas para começar a organizar seu dia!</p>
+            </div>
+        </ul>
+        
+        <div class="stats">
+            <span id="counter">0 tarefas restantes</span>
+            <button id="clearBtn">
+                <i class="fas fa-trash-alt"></i>
+                Limpar Concluídas
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
